@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lyongames/static/css/main.a20e5c97.css",
-    "main.js": "/lyongames/static/js/main.dc041b1a.js",
-    "static/js/453.776fcb15.chunk.js": "/lyongames/static/js/453.776fcb15.chunk.js",
-    "index.html": "/lyongames/index.html",
-    "main.a20e5c97.css.map": "/lyongames/static/css/main.a20e5c97.css.map",
-    "main.dc041b1a.js.map": "/lyongames/static/js/main.dc041b1a.js.map",
-    "453.776fcb15.chunk.js.map": "/lyongames/static/js/453.776fcb15.chunk.js.map"
+    "main.css": "/static/css/main.a20e5c97.css",
+    "main.js": "/static/js/main.9749332d.js",
+    "static/js/453.776fcb15.chunk.js": "/static/js/453.776fcb15.chunk.js",
+    "index.html": "/index.html",
+    "main.a20e5c97.css.map": "/static/css/main.a20e5c97.css.map",
+    "main.9749332d.js.map": "/static/js/main.9749332d.js.map",
+    "453.776fcb15.chunk.js.map": "/static/js/453.776fcb15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a20e5c97.css",
-    "static/js/main.dc041b1a.js"
+    "static/js/main.9749332d.js"
   ]
 }
