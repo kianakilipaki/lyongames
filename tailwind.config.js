@@ -10,7 +10,7 @@ export default {
         "game-pink": "#DF7126", // actually orange
         "game-cyan": "#26DF71", // actually green
         "game-yellow": "#E4C09A", // actually beige
-        "game-green": "#DF7126", // actually red
+        "game-green": "#DF7126", // actually orange
       },
       fontFamily: {
         pixel: ['"Press Start 2P"', "cursive"],
