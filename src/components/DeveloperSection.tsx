@@ -8,6 +8,7 @@ import {
   Palette,
   Headphones,
   Briefcase,
+  Facebook,
 } from "lucide-react";
 
 const DeveloperSection: React.FC = () => {
@@ -25,7 +26,7 @@ const DeveloperSection: React.FC = () => {
     {
       icon: <Headphones size={24} className="text-game-yellow" />,
       name: "Sound Design",
-      description: "8-bit music composition and SFX creation",
+      description: "Using 8-bit music and SFX for game creation",
     },
     {
       icon: <Briefcase size={24} className="text-game-purple" />,
@@ -35,9 +36,21 @@ const DeveloperSection: React.FC = () => {
   ];
 
   const socialLinks = [
-    { platform: "github", url: "#", icon: <Github size={20} /> },
-    { platform: "twitter", url: "#", icon: <Twitter size={20} /> },
-    { platform: "linkedin", url: "#", icon: <Linkedin size={20} /> },
+    {
+      platform: "github",
+      url: "https://github.com/kianakilipaki/lyongames",
+      icon: <Github size={20} />,
+    },
+    {
+      platform: "facebook",
+      url: "https://www.facebook.com/profile.php?id=61575665674946",
+      icon: <Facebook size={20} />,
+    },
+    {
+      platform: "linkedin",
+      url: "www.linkedin.com/in/alani-lyon-42ab81148",
+      icon: <Linkedin size={20} />,
+    },
   ];
 
   return (

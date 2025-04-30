@@ -28,12 +28,12 @@ const Footer: React.FC = () => {
                 {
                   icon: <Facebook size={18} />,
                   label: "Facebook",
-                  url: "https://www.facebook.com/profile.php?id=61575665674946&open_field=website&sk=about_contact_and_basic_info",
+                  url: "https://www.facebook.com/profile.php?id=61575665674946",
                 },
                 {
                   icon: <Linkedin size={18} />,
                   label: "LinkedIn",
-                  url: "https://www.linkedin.com/jobs/",
+                  url: "www.linkedin.com/in/alani-lyon-42ab81148",
                 },
               ].map((social, index) => (
                 <a
