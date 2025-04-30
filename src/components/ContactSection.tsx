@@ -83,9 +83,7 @@ const ContactSection: React.FC = () => {
                     <h4 className="font-pixel text-sm text-white mb-1">
                       Studio Location
                     </h4>
-                    <p className="text-gray-300 text-sm">
-                      San Francisco, California
-                    </p>
+                    <p className="text-gray-300 text-sm">South Jordan, Utah</p>
                   </div>
                 </div>
               </div>
@@ -103,32 +101,22 @@ const ContactSection: React.FC = () => {
                 >
                   <ExternalLink size={18} className="text-game-cyan" />
                   <span className="text-sm text-gray-300 group-hover:text-white transition-colors">
-                    App Store
+                    Apple Store **coming soon**
                   </span>
                 </a>
 
                 <a
-                  href="#"
+                  href="https://play.google.com/store/apps/dev?id=4834278271327400211"
                   className="flex items-center space-x-2 p-3 bg-game-black/50 rounded-lg border border-game-purple/20 hover:border-game-cyan/50 transition-all duration-300 group"
                 >
                   <ExternalLink size={18} className="text-game-cyan" />
                   <span className="text-sm text-gray-300 group-hover:text-white transition-colors">
-                    Google Play
+                    Google Play Store
                   </span>
                 </a>
 
                 <a
-                  href="#"
-                  className="flex items-center space-x-2 p-3 bg-game-black/50 rounded-lg border border-game-purple/20 hover:border-game-cyan/50 transition-all duration-300 group"
-                >
-                  <Download size={18} className="text-game-pink" />
-                  <span className="text-sm text-gray-300 group-hover:text-white transition-colors">
-                    Press Kit
-                  </span>
-                </a>
-
-                <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61575665674946"
                   className="flex items-center space-x-2 p-3 bg-game-black/50 rounded-lg border border-game-purple/20 hover:border-game-cyan/50 transition-all duration-300 group"
                 >
                   <ExternalLink size={18} className="text-game-pink" />

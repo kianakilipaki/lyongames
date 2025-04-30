@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
         <Logo />
 
         <div className="hidden md:flex items-center space-x-8">
-          {["Home", "Games", "About", "News", "Contact"].map((item) => (
+          {["Home", "Games", "About", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
         }`}
       >
         <div className="container mx-auto px-4 flex flex-col space-y-4">
-          {["Home", "Games", "About", "News", "Contact"].map((item) => (
+          {["Home", "Games", "About", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}

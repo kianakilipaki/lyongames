@@ -1,10 +1,10 @@
-import React from 'react';
-import { Github, Twitter, Linkedin, Youtube, Heart } from 'lucide-react';
-import Logo from './Logo';
+import React from "react";
+import { Github, Linkedin, Youtube, Heart, Facebook } from "lucide-react";
+import Logo from "./Logo";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="relative bg-game-dark py-12 border-t border-game-purple/20">
       <div className="container mx-auto px-4">
@@ -13,16 +13,28 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <Logo />
             <p className="text-gray-400 text-sm max-w-xs">
-              Independent mobile game developer specializing in pixel art puzzle games with a retro aesthetic and modern gameplay.
+              Independent mobile game developer specializing in pixel art puzzle
+              games with a retro aesthetic and modern gameplay.
             </p>
-            
+
             {/* Social icons */}
             <div className="flex space-x-4">
               {[
-                { icon: <Github size={18} />, label: "GitHub", url: "#" },
-                { icon: <Twitter size={18} />, label: "Twitter", url: "#" },
-                { icon: <Linkedin size={18} />, label: "LinkedIn", url: "#" },
-                { icon: <Youtube size={18} />, label: "YouTube", url: "#" }
+                {
+                  icon: <Github size={18} />,
+                  label: "GitHub",
+                  url: "https://github.com/kianakilipaki/lyongames",
+                },
+                {
+                  icon: <Facebook size={18} />,
+                  label: "Facebook",
+                  url: "https://www.facebook.com/profile.php?id=61575665674946&open_field=website&sk=about_contact_and_basic_info",
+                },
+                {
+                  icon: <Linkedin size={18} />,
+                  label: "LinkedIn",
+                  url: "https://www.linkedin.com/jobs/",
+                },
               ].map((social, index) => (
                 <a
                   key={index}
@@ -37,22 +49,23 @@ const Footer: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Quick links */}
           <div>
-            <h3 className="font-pixel text-game-cyan text-sm mb-6">Quick Links</h3>
+            <h3 className="font-pixel text-game-cyan text-sm mb-6">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {[
                 { label: "Home", url: "#home" },
                 { label: "Games", url: "#games" },
                 { label: "About", url: "#about" },
                 { label: "Developer", url: "#developer" },
-                { label: "News", url: "#news" },
-                { label: "Contact", url: "#contact" }
+                { label: "Contact", url: "#contact" },
               ].map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.url} 
+                  <a
+                    href={link.url}
                     className="text-gray-300 hover:text-game-pink transition-colors duration-300 text-sm inline-block"
                   >
                     {link.label}
@@ -61,21 +74,24 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
-          
+
           {/* Newsletter */}
           <div>
-            <h3 className="font-pixel text-game-cyan text-sm mb-6">Stay Updated</h3>
+            <h3 className="font-pixel text-game-cyan text-sm mb-6">
+              Stay Updated
+            </h3>
             <p className="text-gray-400 text-sm mb-4">
-              Subscribe to get updates on new games, features, and special offers.
+              Subscribe to get updates on new games, features, and special
+              offers.
             </p>
             <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
+              <input
+                type="email"
+                placeholder="Your email"
                 className="bg-game-black border border-game-purple/30 rounded-l-md px-4 py-2 text-white focus:outline-none focus:border-game-cyan transition-colors duration-300 text-sm flex-grow"
               />
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="bg-game-purple hover:bg-game-purple/80 text-white px-4 py-2 rounded-r-md font-pixel text-xs transition-colors duration-300"
               >
                 SUBSCRIBE
@@ -83,26 +99,41 @@ const Footer: React.FC = () => {
             </form>
           </div>
         </div>
-        
+
         <div className="mt-12 pt-6 border-t border-game-purple/20 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-xs mb-4 sm:mb-0">
             © {currentYear} Lyon Games. All rights reserved.
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="#" className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300">Cookie Policy</a>
+            <a
+              href="#"
+              className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#"
+              className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="#"
+              className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
+            >
+              Cookie Policy
+            </a>
           </div>
         </div>
-        
+
         <div className="mt-6 text-center text-xs text-gray-500 flex items-center justify-center">
           <span>Made with</span>
           <Heart size={12} className="mx-1 text-game-pink" />
           <span>and lots of pixels</span>
         </div>
       </div>
-      
+
       {/* Decorative pixel art elements */}
       <div className="absolute bottom-0 left-0 w-4 h-4 bg-game-purple opacity-40"></div>
       <div className="absolute bottom-6 left-10 w-2 h-2 bg-game-cyan opacity-40"></div>

@@ -15,7 +15,7 @@ const DeveloperSection: React.FC = () => {
     {
       icon: <Code size={24} className="text-game-cyan" />,
       name: "Game Development",
-      description: "Unity, Godot, and custom game frameworks",
+      description: "Unity, Godot, and React Native expertise",
     },
     {
       icon: <Palette size={24} className="text-game-pink" />,
@@ -55,7 +55,7 @@ const DeveloperSection: React.FC = () => {
           <div className="flex flex-col items-center lg:items-start">
             <div className="relative rounded-lg overflow-hidden mb-6 max-w-sm w-full border-2 border-game-purple/30 group">
               <img
-                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+                src="/assets/dev3.jpg"
                 alt="Lyon Games Developer"
                 className="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -87,7 +87,7 @@ const DeveloperSection: React.FC = () => {
             <div className="bg-game-dark/60 border border-game-purple/30 rounded-lg p-6 text-gray-300 font-body">
               <p className="mb-4">
                 Hi there! I'm Alani, the solo developer behind Lyon Games. With
-                over 8 years of game development experience, I've combined my
+                over 5 years of game development experience, I've combined my
                 passion for retro aesthetics with modern mobile gameplay.
               </p>
               <p>
@@ -133,18 +133,10 @@ const DeveloperSection: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex">
                   <div className="w-24 shrink-0 font-pixel text-game-cyan text-sm">
-                    2019
+                    2022
                   </div>
                   <div className="text-gray-300">
-                    Started Lyon Games, released first puzzle title
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="w-24 shrink-0 font-pixel text-game-cyan text-sm">
-                    2021
-                  </div>
-                  <div className="text-gray-300">
-                    Reached 500K+ downloads milestone
+                    Graduated with Bachelors of Web Development
                   </div>
                 </div>
                 <div className="flex">
@@ -152,7 +144,7 @@ const DeveloperSection: React.FC = () => {
                     2023
                   </div>
                   <div className="text-gray-300">
-                    Featured in Apple App Store's "Game of the Day"
+                    Hired as frontend web developer
                   </div>
                 </div>
                 <div className="flex">
@@ -160,7 +152,7 @@ const DeveloperSection: React.FC = () => {
                     2025
                   </div>
                   <div className="text-gray-300">
-                    Expanding with new puzzle series and collaborations
+                    Started Lyon Games, released first puzzle title
                   </div>
                 </div>
               </div>

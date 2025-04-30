@@ -37,7 +37,7 @@ const AboutSection: React.FC = () => {
           <div>
             <SectionTitle
               title="About Lyon Games"
-              subtitle="Crafting pixel perfect puzzle experiences since 2019"
+              subtitle="Crafting pixel perfect puzzle experiences since 2024"
               alignment="left"
             />
 
@@ -95,15 +95,15 @@ const AboutSection: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-8">
               <div className="text-center p-4 border border-game-purple/20 rounded-lg">
-                <p className="font-pixel text-3xl text-game-pink">8+</p>
+                <p className="font-pixel text-3xl text-game-pink">1</p>
                 <p className="text-sm text-gray-300 mt-2">Games Released</p>
               </div>
               <div className="text-center p-4 border border-game-purple/20 rounded-lg">
-                <p className="font-pixel text-3xl text-game-cyan">2M+</p>
+                <p className="font-pixel text-3xl text-game-cyan">11</p>
                 <p className="text-sm text-gray-300 mt-2">Downloads</p>
               </div>
               <div className="text-center p-4 border border-game-purple/20 rounded-lg">
-                <p className="font-pixel text-3xl text-game-yellow">4.7</p>
+                <p className="font-pixel text-3xl text-game-yellow">NA</p>
                 <p className="text-sm text-gray-300 mt-2">Average Rating</p>
               </div>
             </div>
