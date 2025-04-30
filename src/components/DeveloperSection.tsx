@@ -3,7 +3,6 @@ import SectionTitle from "./SectionTitle";
 import {
   Github,
   Linkedin,
-  Twitter,
   Code,
   Palette,
   Headphones,

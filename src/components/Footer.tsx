@@ -74,30 +74,6 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="font-pixel text-game-cyan text-sm mb-6">
-              Stay Updated
-            </h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Subscribe to get updates on new games, features, and special
-              offers.
-            </p>
-            <form className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="bg-game-black border border-game-purple/30 rounded-l-md px-4 py-2 text-white focus:outline-none focus:border-game-cyan transition-colors duration-300 text-sm flex-grow"
-              />
-              <button
-                type="submit"
-                className="bg-game-purple hover:bg-game-purple/80 text-white px-4 py-2 rounded-r-md font-pixel text-xs transition-colors duration-300"
-              >
-                SUBSCRIBE
-              </button>
-            </form>
-          </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-game-purple/20 flex flex-col sm:flex-row justify-between items-center">
