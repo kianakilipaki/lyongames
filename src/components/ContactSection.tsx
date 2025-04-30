@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
-import { Mail, Send, MapPin, Download, ExternalLink } from "lucide-react";
+import { Mail, Send, MapPin, ExternalLink } from "lucide-react";
 
 const ContactSection: React.FC = () => {
   const [formState, setFormState] = useState({

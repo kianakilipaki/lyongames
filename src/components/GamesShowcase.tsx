@@ -93,7 +93,6 @@ const GamesShowcase: React.FC = () => {
               category={game.category}
               releaseStatus={game.releaseStatus}
               storeLink={game.storeLink}
-              demoLink={game.demoLink}
             />
           ))}
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Youtube, Heart, Facebook } from "lucide-react";
+import { Github, Linkedin, Heart, Facebook } from "lucide-react";
 import Logo from "./Logo";
 
 const Footer: React.FC = () => {
