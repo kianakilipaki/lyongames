@@ -8,7 +8,7 @@ const gamesData = [
     id: 1,
     title: "PixelDoku",
     description:
-      "Navigate through themed levels of pixel-perfect puzzles. Use logic and timing to overcome obstacles and collect all the gems.",
+      "Sudoku meets pixel art in this relaxing puzzle game! Solve cute, colorful grids and unlock charming themes — from cats to bugs and beyond.",
     imageUrl: "/assets/birdDoku.jpg",
     category: "Puzzle",
     releaseStatus: "Released" as const,

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { Mail, Send, MapPin, ExternalLink } from "lucide-react";
+import { submitContactForm } from "../api/contactAPI";
 
 const ContactSection: React.FC = () => {
   const [formState, setFormState] = useState({
@@ -22,13 +23,13 @@ const ContactSection: React.FC = () => {
     setFormState((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      await submitContactForm(formState);
+
       setIsSubmitted(true);
       setFormState({
         name: "",
@@ -41,7 +42,12 @@ const ContactSection: React.FC = () => {
       setTimeout(() => {
         setIsSubmitted(false);
       }, 5000);
-    }, 1500);
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred while sending your message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -71,7 +77,9 @@ const ContactSection: React.FC = () => {
                     <h4 className="font-pixel text-sm text-white mb-1">
                       Email
                     </h4>
-                    <p className="text-gray-300 text-sm">hello@lyongames.com</p>
+                    <p className="text-gray-300 text-sm">
+                      alaniklyon@gmail.com
+                    </p>
                   </div>
                 </div>
 

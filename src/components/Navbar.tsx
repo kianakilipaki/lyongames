@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Volume2, VolumeX } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isSoundOn, setIsSoundOn] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +21,6 @@ const Navbar: React.FC = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleSound = () => {
-    setIsSoundOn(!isSoundOn);
-    // Sound implementation could be added here
   };
 
   return (
@@ -51,18 +45,6 @@ const Navbar: React.FC = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-game-cyan transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-
-          <button
-            onClick={toggleSound}
-            className="text-white hover:text-game-yellow focus:outline-none transition duration-300"
-            aria-label={isSoundOn ? "Mute sound" : "Turn on sound"}
-          >
-            {isSoundOn ? (
-              <Volume2 size={20} className="animate-pulse" />
-            ) : (
-              <VolumeX size={20} />
-            )}
-          </button>
         </div>
 
         <button
@@ -91,22 +73,6 @@ const Navbar: React.FC = () => {
               {item}
             </a>
           ))}
-          <button
-            onClick={toggleSound}
-            className="text-white hover:text-game-yellow focus:outline-none py-2 flex items-center space-x-2"
-          >
-            {isSoundOn ? (
-              <>
-                <Volume2 size={20} />
-                <span className="font-pixel text-sm">Sound On</span>
-              </>
-            ) : (
-              <>
-                <VolumeX size={20} />
-                <span className="font-pixel text-sm">Sound Off</span>
-              </>
-            )}
-          </button>
         </div>
       </div>
     </nav>
