@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
             <a
-              href="#games"
+              href="/#games"
               className="group px-8 py-3 rounded bg-game-purple hover:bg-game-purple/80 text-white font-pixel text-sm transition-all duration-300 transform hover:translate-y-[-2px] relative flex items-center justify-center"
             >
               <span>DISCOVER GAMES</span>
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
             </a>
 
             <a
-              href="#contact"
+              href="/#contact"
               className="group px-8 py-3 rounded bg-transparent border-2 border-game-cyan hover:bg-game-cyan/10 text-game-cyan font-pixel text-sm transition-all duration-300 transform hover:translate-y-[-2px] flex items-center justify-center"
             >
               <span>CONTACT ME</span>

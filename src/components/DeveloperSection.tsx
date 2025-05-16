@@ -47,10 +47,11 @@ const DeveloperSection: React.FC = () => {
     },
     {
       platform: "linkedin",
-      url: "www.linkedin.com/in/alani-lyon-42ab81148",
+      url: "https://www.linkedin.com/in/alani-lyon-42ab81148",
       icon: <Linkedin size={20} />,
     },
   ];
+
 
   return (
     <section id="developer" className="py-20 relative">
@@ -72,8 +73,6 @@ const DeveloperSection: React.FC = () => {
                 className="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-game-dark to-transparent opacity-60"></div>
-
-              {/* Glitch effect on hover */}
               <div className="absolute -inset-0.5 bg-gradient-to-r from-game-cyan to-game-purple opacity-0 group-hover:opacity-20 blur-sm transition-opacity duration-500"></div>
             </div>
 

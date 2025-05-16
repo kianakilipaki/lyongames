@@ -1,6 +1,7 @@
 import React from "react";
 import { Github, Linkedin, Heart, Facebook } from "lucide-react";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -57,11 +58,11 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                { label: "Home", url: "#home" },
-                { label: "Games", url: "#games" },
-                { label: "About", url: "#about" },
-                { label: "Developer", url: "#developer" },
-                { label: "Contact", url: "#contact" },
+                { label: "Home", url: "/#home" },
+                { label: "Games", url: "/#games" },
+                { label: "About", url: "/#about" },
+                { label: "Developer", url: "/#developer" },
+                { label: "Contact", url: "/#contact" },
               ].map((link, index) => (
                 <li key={index}>
                   <a
@@ -82,24 +83,20 @@ const Footer: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="#"
-              className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
-            >
-              Cookie Policy
-            </a>
+          <Link
+            to="/privacy"
+            className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
+          >
+            Privacy Policy
+          </Link>
+
+          <Link
+            to="/terms"
+            className="text-gray-400 hover:text-game-cyan text-xs transition-colors duration-300"
+          >
+            Terms of Service
+          </Link>
+
           </div>
         </div>
 

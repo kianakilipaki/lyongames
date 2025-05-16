@@ -1,7 +1,7 @@
 import React from "react";
 const Logo: React.FC = () => {
   return (
-    <a href="#home" className="flex items-center space-x-2 group">
+    <a href="/#home" className="flex items-center space-x-2 group">
       <div className="relative w-8 h-8">
         <img
           src="/assets/logo.png"

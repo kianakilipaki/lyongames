@@ -104,7 +104,7 @@ const ContactSection: React.FC = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <a
-                  href="#"
+                  href="/#"
                   className="flex items-center space-x-2 p-3 bg-game-black/50 rounded-lg border border-game-purple/20 hover:border-game-cyan/50 transition-all duration-300 group"
                 >
                   <ExternalLink size={18} className="text-game-cyan" />

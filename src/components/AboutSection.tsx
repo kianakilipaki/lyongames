@@ -62,7 +62,7 @@ const AboutSection: React.FC = () => {
 
             <div className="mt-8">
               <a
-                href="#developer"
+                href="/#developer"
                 className="inline-block group px-6 py-3 bg-transparent border-2 border-game-cyan hover:bg-game-cyan/10 text-game-cyan font-pixel text-sm transition-all duration-300"
               >
                 ABOUT THE DEVELOPER

@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           {["Home", "Games", "About", "Contact"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/#${item.toLowerCase()}`}
               className="font-pixel text-sm text-white hover:text-game-cyan transition duration-300 relative group"
             >
               {item}
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           {["Home", "Games", "About", "Contact"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/#${item.toLowerCase()}`}
               className="font-pixel text-sm text-white hover:text-game-cyan py-2 border-b border-game-purple/20"
               onClick={() => setIsMenuOpen(false)}
             >
