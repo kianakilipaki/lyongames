@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Heart, Facebook } from "lucide-react";
+import { Heart } from "lucide-react";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 
@@ -17,38 +17,6 @@ const Footer: React.FC = () => {
               Independent mobile game developer specializing in pixel art puzzle
               games with a retro aesthetic and modern gameplay.
             </p>
-
-            {/* Social icons */}
-            <div className="flex space-x-4">
-              {[
-                {
-                  icon: <Github size={18} />,
-                  label: "GitHub",
-                  url: "https://github.com/kianakilipaki/lyongames",
-                },
-                {
-                  icon: <Facebook size={18} />,
-                  label: "Facebook",
-                  url: "https://www.facebook.com/profile.php?id=61575665674946",
-                },
-                {
-                  icon: <Linkedin size={18} />,
-                  label: "LinkedIn",
-                  url: "www.linkedin.com/in/alani-lyon-42ab81148",
-                },
-              ].map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-game-black text-gray-400 hover:text-game-cyan border border-game-purple/20 hover:border-game-cyan/50 transition-all duration-300"
-                  aria-label={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick links */}

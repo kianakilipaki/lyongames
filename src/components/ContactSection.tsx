@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
-import { Mail, Send, MapPin, ExternalLink } from "lucide-react";
+import { Send, ExternalLink } from "lucide-react";
 import { submitContactForm } from "../api/contactAPI";
 
 const ContactSection: React.FC = () => {
@@ -61,42 +61,8 @@ const ContactSection: React.FC = () => {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-          {/* Contact info and quick links */}
+          {/* Store links */}
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-game-dark/60 border border-game-purple/30 rounded-lg p-6">
-              <h3 className="font-pixel text-lg text-game-cyan mb-6">
-                Contact Information
-              </h3>
-
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 flex items-center justify-center bg-game-purple rounded-lg">
-                    <Mail size={20} className="text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-pixel text-sm text-white mb-1">
-                      Email
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      alaniklyon@gmail.com
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 flex items-center justify-center bg-game-pink rounded-lg">
-                    <MapPin size={20} className="text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-pixel text-sm text-white mb-1">
-                      Studio Location
-                    </h4>
-                    <p className="text-gray-300 text-sm">South Jordan, Utah</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-game-dark/60 border border-game-purple/30 rounded-lg p-6">
               <h3 className="font-pixel text-lg text-game-yellow mb-6">
                 Quick Links
@@ -120,16 +86,6 @@ const ContactSection: React.FC = () => {
                   <ExternalLink size={18} className="text-game-cyan" />
                   <span className="text-sm text-gray-300 group-hover:text-white transition-colors">
                     Google Play Store
-                  </span>
-                </a>
-
-                <a
-                  href="https://www.facebook.com/profile.php?id=61575665674946"
-                  className="flex items-center space-x-2 p-3 bg-game-black/50 rounded-lg border border-game-purple/20 hover:border-game-cyan/50 transition-all duration-300 group"
-                >
-                  <ExternalLink size={18} className="text-game-pink" />
-                  <span className="text-sm text-gray-300 group-hover:text-white transition-colors">
-                    Game Support
                   </span>
                 </a>
               </div>
